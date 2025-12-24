@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Red Hat Text", sans-serif;
+    position: relative;
+}
+.header{
+    width: 100%;
+    padding: 16px 32px;
+    display: flex;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    background-image: url('https://th-thumbnailer.cdn-si-edu.com/pqi6YsILTTzpYo1RofTMSDK74XA=/1280x960/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/19/00/19000e55-a414-4fde-b790-5e5f9f4ff28b/hehuanshan-main-peak-istock-1148778056.jpg');
+    background-size: cover;
+    img{
+        height: 190px;
+        width: max-content;
+        border-radius: 50%;
+    }
+    h1{
+        font-family: "Rubik Gemstones", system-ui;
+        font-weight: 400;
+        font-size: 36px;
+        color: #333;
+        font-style: italic;
+    }
+    .contact{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: large;
+    }
+}
+.container{
+    text-align: center;
+    color: #333;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    h1{
+        font-size: 48px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    button{
+        padding: 16px 56px;
+        background-color: #333;
+        color: white;
+        text-transform: uppercase;
+        border-radius: 5px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        font-size: 14px;
+        display: inline-block;
+        cursor: pointer;
+    }
+    .about{
+        max-width: 800px;
+        margin-top: 20px;
+        padding: 16px;
+        border-radius: 8px;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: justify;
+        display: none;
+    }
+    .about.hidden{
+        display: block;
+        transition: all 0.5s ease-in-out;   
+    }
+}
+.second{
+    gap: 26px;
+    background-image: url(https://images.unsplash.com/photo-1514496959998-c01c40915c5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);
+    background-attachment: fixed;
+    height: 100vh;
+    flex-direction: row;
+    .item{
+        max-width: 320px;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 0.5em;
+        -webkit-box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
+        -moz-box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
+        box-shadow: 0px 29px 38px -15px rgba(0, 0, 0, 0.43);
+        display: flex;
+
+        img{
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+            margin-top: 20px;
+            border-radius: 0.3em;
+            width: 90%;
+            /* padding: 0px 15px 0px 15px; */
+            margin-top: 20px;
+        }
+        h3{
+            font-size: 26px;
+            margin-top: 16px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        p{
+            padding: 16px;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+
+        a{
+        padding: 16px 56px;
+        background-color: #333;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 5px;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+        font-size: 14px;
+        display: inline-block;
+        margin-bottom: 30px;
+        }
+    }
+}
+
+.third{
+    background-image: url(https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+    background-attachment: fixed;
+    height: 100vh;
+    /* position: relative; */
+
+    .content{
+        padding: 32px;
+        border-radius: 16px;
+        max-width: 600px;
+        background-color: rgba(255, 255, 255, 0.9);
+
+        h2{
+            font-size: 40px;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 700;
+        }
+        p{
+            padding: 16px;
+            line-height: 24px;
+            margin-bottom: 24px;
+        }
+        a{
+            padding: 16px 56px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            border-radius: 5px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            font-size: 14px;
+            display: inline-block;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .header{
+        height: auto;
+        gap: 16px;
+        text-align: center;
+        img{
+            height: 100px;
+            width: 100px;
+        }
+        h1{
+            font-size: 28px;
+        }
+        .contact{
+            display: none;
+        }
+    }
+    .second{
+        flex-direction: column;
+        height: auto;
+        padding: 32px 0;
+    }
+    
+    
+}
